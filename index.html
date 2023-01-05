@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;1,8..144,100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="all.min.css">
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="flexboxgrid.css">
+  <link rel="icon" href="favicon.png" type="img/png" sizes="16x16">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+<script>
+
+// Shorthand for $( document ).ready()
+$(function() {
+    $(".toggle").on("click", function(){
+      if($(".item").hasClass("active")){
+          $(".item").removeClass("active");
+      }
+      else{
+        $(".item").addClass("active");
+      }
+    })
+});
+
+</script>
+</head>
+
+<!-- Header -->
+<body>
+<header>
+    <nav>
+      <ul class="menu">
+        <img src="favicon.jpg" alt="logo"><a href="index.html"></a>
+        <li class="logo"><a href="index.html">AppTheme<span class="primary-text">PH</span></a></li>
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="about.html">About</a></li>
+        <li class="item"><a href="services.html">Services</a></li>
+        <li class="item button"><a href="login.html">Login</a></li>
+        <li class="item button secondary"><a href="signup.html">Sign Up</a></li>
+        <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
+</header>
+
+<!-- Showcase -->
+<main>
+  <section id="showcase">
+      <div class="container">
+          <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-7 showcase-content">
+            <h1>Welcome to <span class="primary-text">AppThemePH</span></h1>
+            <p>A template built with HTML5, CSS3 and Flexboxgrid</p>
+            </div>
+          </div>
+        </div>
+    </section>
+  
+
+    <!-- Features -->
+    <section id="features">
+      <div class="container">
+        <div class="row center-xs center-sm center-md center-lg">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2>Core Features</h2>
+            <p>What's Included</p>
+
+            <!-- Icon Row 1 -->
+            <div class="row center-xs center-sm center-md center-lg">
+              <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <i class="fa fa-dashboard"></i><br>
+                <h3>Fully Optimized</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quasi deleniti illo recusandae, mollitia impedit natus deserunt animi quia facere.</p>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <i class="fa fa-question-circle"></i><br>
+                <h3>Free Support</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quasi deleniti illo recusandae, mollitia impedit natus deserunt animi quia facere.</p>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <i class="fa fa-rocket"></i><br>
+                <h3>Free Upgrades</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quasi deleniti illo recusandae, mollitia impedit natus deserunt animi quia facere.</p>
+              </div>
+            </div>
+
+              <!-- Icon Row 2 -->
+              <div class="row center-xs center-sm center-md center-lg">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <i class="fa fa-line-chart"></i><br>
+                  <h3>UpTime Guarantee</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quasi deleniti illo recusandae, mollitia impedit natus deserunt animi quia facere.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <i class="fa fa-users"></i><br>
+                  <h3>Multi-User</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quasi deleniti illo recusandae, mollitia impedit natus deserunt animi quia facere.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <i class="fa fa-plug"></i><br>
+                  <h3>Plug & Play</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quasi deleniti illo recusandae, mollitia impedit natus deserunt animi quia facere.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Info Section -->
+  <section id="info">
+    <div class="container">
+      <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 iphone-content">
+          <img src="../img/iphone.jpg" id="iphone" alt="iphone">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <h2>Core Features</h2>
+          <ul>
+            <li><i class="fa fa-check"></i>Fully Optimized</li>
+            <li><i class="fa fa-check"></i>Free Support</li>
+            <li><i class="fa fa-check"></i>Free Upgrads</li>
+            <li><i class="fa fa-check"></i>UpTime Guarantee</li>
+            <li><i class="fa fa-check"></i>Multiple Users</li>
+            <li><i class="fa fa-check"></i>Plug & Play</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  </main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>company</h4>
+          <ul>
+            <li class=""><a href="#">about us</a></li>
+            <li class=""><a href="#">our services</a></li>
+            <li class=""><a href="#">privacy policy</a></li>
+            <li class=""><a href="#">affiliate program</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+          <ul>
+            <li class=""><a href="#">FAQ</a></li>
+            <li class=""><a href="#">shipping</a></li>
+            <li class=""><a href="#">returns</a></li>
+            <li class=""><a href="#">order status</a></li>
+            <li class=""><a href="#">payment options</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+          <ul>
+            <li class=""><a href="#">Keyboard</a></li>
+            <li class=""><a href="#">Mouse</a></li>
+            <li class=""><a href="#">Monitor</a></li>
+            <li class=""><a href="#">Speaker</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+          <div class="social-links">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

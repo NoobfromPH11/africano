@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="icon" href="favicon.png" type="img/png" sizes="16x16">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="signup-left">
+  <div class="signup-header">
+    <h1>Sign Up</h1>
+    <h4>It's free and only takes a minute</h4>
+  </div>
+  <div id="msg"></div>
+    <form class="signup-form">
+      <div class="signup-form-content">
+      <label>First Name</label>
+      <input type="text" id="firstName" required>
+      <label>Last Name</label>
+      <input type="text" id="lastName" required>
+      <label>Email</label>
+      <input type="email" id="email" required>
+      <label>Password</label>
+      <input type="password" id="password" required>
+      <label>Confirm Password</label>
+      <input type="password" id="Cpassword" required>
+      <button id="btn" type="submit"> Sign Up</button>
+    </div>
+    
+    <div class="signup-form-footer">
+      <div class="form-item">
+        <div class="checkbox">
+          <input type="checkbox" id="rememberMeCheckbox" required>
+          <label for="rememberMeCheckbox" class="checkboxLabel"></label>
+        </div>
+      </div>
+    <p>By clicking the Sign Up button, you agree to our <br>
+    <a href="#"> Terms and Condition</a> and <a href="#">Policy</a>
+    </p>
+  
+  </div>
+  <p>Already have an account? <a href="#" class="login">Login</a></p>
+  </div>
+</form>
+
+  <div class="signup-right">
+    <img src="signup.jpg" alt="signup">
+  </div>
+</div>
+<script src="signup.js"></script>
+</body>
+</html>
